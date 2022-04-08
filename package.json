@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "nodejs": "^0.0.0"
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass":"node-sass --include-path scss sass/index.scss css/main.css",
+    "watch-sass":"nodemon -e scss -x \"npm run build-sass\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
