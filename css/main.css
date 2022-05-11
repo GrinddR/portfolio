@@ -1,0 +1,103 @@
+/*VARIABLES*/
+/*VARIABLES*/
+:root {
+  --pad: (max 20px, 4vmin); }
+
+/*MAPS*/
+.size-jumbo {
+  font-size: 6.8em; }
+
+.size-display {
+  font-size: 3.2em; }
+
+.size-title {
+  font-size: 2em; }
+
+.size-text {
+  font-size: 1.5em; }
+
+.size-caption {
+  font-size: 1em; }
+
+.pad-x-large {
+  padding: 5rem; }
+
+.pad-large {
+  padding: 3rem; }
+
+.pad-medium {
+  padding: 1.5rem; }
+
+.pad-small {
+  padding: 1rem; }
+
+.pad-x-small {
+  padding: 0.625rem; }
+
+.gap-x-large {
+  gap: 5rem; }
+
+.gap-large {
+  gap: 3rem; }
+
+.gap-medium {
+  gap: 1.5rem; }
+
+.gap-small {
+  gap: 1rem; }
+
+.gap-x-small {
+  gap: 0.625rem; }
+
+/*GLOBALES*/
+/*RESET CSS*/
+*,
+*::after,
+*::before {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/*GLOBALS*/
+body {
+  background-color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  letter-spacing: .02em; }
+
+html {
+  color: white; }
+
+/*IMPORTS*/
+/*PARTIALS*/
+.navbar {
+  flex-basis: 30%;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: aqua; }
+  .navbar_ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px; }
+
+/*VIEWS*/
+#page {
+  min-height: 100vh; }
+
+.content {
+  flex-basis: 70%; }
+  .content .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.625rem;
+    position: relative;
+    top: 12rem;
+    left: 0; }
+    .content .home_aboutme {
+      font-size: 2em; }
+      .content .home_aboutme-txt {
+        display: block; }

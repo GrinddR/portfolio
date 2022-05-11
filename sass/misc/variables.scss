@@ -1,0 +1,54 @@
+/*VARIABLES*/
+
+:root{
+    --pad: (max 20px, 4vmin);
+}
+
+
+
+/*MAPS*/
+
+
+$size:(
+   jumbo: 6.8em,
+   display: 3.2em, 
+   title: 2em,
+   text: 1.5em,
+   caption: 1em
+
+);
+
+@each $var,
+$val in $size {
+    .size-#{$var} {
+        font-size: #{$val};
+    }
+}
+
+$pad:(x-large:5rem,
+    large:3rem,
+    medium:1.5rem,
+    small:1rem,
+    x-small: .625rem,
+);
+
+@each $var,
+$val in $pad {
+    .pad-#{$var} {
+        padding: #{$val};
+    }
+}
+
+$gap:(x-large:5rem,
+    large:3rem,
+    medium:1.5rem,
+    small:1rem,
+    x-small: .625rem,
+);
+
+@each $var,
+$val in $gap {
+    .gap-#{$var} {
+        gap: #{$val};
+    }
+}
